@@ -6,42 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Contato</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <script src="Alertas js.js"></script>
 </head>
 
 <body>
-    <header class="nav-bar">
-        
-            <div class="navbar">
-                <div class="logo-telacontato">
-                    <img src="../img/logo.png" alt="logo">
-                </div>
-                <div >
-                    <nav class="menu">
-                        
-                            <a href="">HOME</a>
-                            <a href="">CONTATO</a> 
-                            <a href="">CADASTRO</a> 
-                        
-                    </nav>
-                </div>
-            </div>                              
-    </header>
+    <header>
+        <img class="logo" src="../img/logo.png" alt="Logo SoulFifi" />
+        <nav>
+          <a href="">HOME</a>
+          <a href="">CONTATO</a>
+          <a href="">CADASTRO</a>
+        </nav>
+      </header>
   <main class="container">
         <section class="cabeçalho">
             <table>
+                <br/>
                 <h1>Fale Conosco</h1>
                 <tr>
                     <th><img src="../img/whats-icon.jpeg" alt="WhatsApp" ></th><br/>
-                    <th>(11)99999-9999</th><br/>
+                    <th> (11)99999-9999</th><br/>
                     
                 </tr>
                 <tr>
-                    <th><img src="../img/relogio-icon.jpeg" alt="relogio" ></th><br/>
-                    <th>Seg à Sex das 08:00 as 18:00 hrs</th><br/>
+                    <th><img src="../img/relogio.png" alt="relogio" ></th><br/>
+                    <th> Seg à Sex das 08:00 as 18:00 hrs</th><br/>
                 </tr>
                 <tr>
                     <th><img src="../img/local-icon.png" alt="localização" ></th><br/>
-                    <th>Rua da Fofoca nº 10, Fofacalândia</th><br/>
+                    <th> Rua da Fofoca nº 10, Fofacalândia</th><br/>
+                    
+                </tr>
+                <tr>
+                    <th><img src="../img/o-email.png" alt="e-mail" ></th><br/>
+                    <th> fofocas@soulfifi.com</th><br/>
                     
                 </tr>
             </table>
@@ -49,24 +47,32 @@
        
         <section class="mensagem">
             <br/><br/><br/><br/>
-                <label for="email"><b>Nos envie uma mensagem:</b></label><br/>
+                <label for="email"><b>Nos envie uma mensagem:</b></label><br/><br/>
                 <textarea name="email" rows="5" style="width: 400px;"></textarea><br/>       
-                <button>Enviar</button>
+                <button onclick="alertaMensagem()"><b>Enviar</b></button>
                 <br/><br/><br/><br/>
         </section>
-
+        <aside>
+            <div class="home_banner">
+              <div class="banner"><a href="https://soulcode.com/assinatura-cursos-online"><img src="../img/banner1.PNG" alt="soulcode" ></a></div>
+              <div class="banner"><a href="https://soulcode.com/bootcamp"><img src="../img/banner2.PNG" alt="bootcamp" ></a></div>
+              <div class="banner"><a href="https://www.salesforce.com/br/campaign/successnow/"><img src="../img/banner3.PNG" alt="saleforce" ></a></div>
+            </div>
+          </aside>
     </main>
   
   </body>
   <footer>
     <section class="rodape">
         <ul type="none">
-            <li><a href="https://soulcode.com/"><img src="../img/download.png" alt="site soulcode" style="height: 30px;"> Website</a></li>
-            <li><a href="https://instagram.com/soulcodeacademy?igshid=YmMyMTA2M2Y="><img src="../img/insta-icon.png" alt="insta"style="height: 30px;"> Instagram</a> </li>
-            <li><a href="https://www.linkedin.com/company/soulcodeacademy/mycompany/"><img src="../img/linkdin-icon.png" alt="linkedin"style="height: 30px;"> LinkedIn</a> </li>
-
+            <li><a href="https://soulcode.com/"><img src="../img/download.png" alt="site soulcode" style="height: 30px;"></a></li>
+            <li><a href="https://instagram.com/soulcodeacademy?igshid=YmMyMTA2M2Y="><img src="../img/insta-icon.png" alt="insta"style="height: 30px;"> </a> </li>
+            <li><a href="https://www.linkedin.com/company/soulcodeacademy/mycompany/"><img src="../img/linkdin-icon.png" alt="linkedin"style="height: 30px;"> </a> </li><br/>
+            
+        </ul>
+        <p class="rep">Daniele, Maurício e Eduardo&copy; 2023</p>
     </section>
-        
+    
 
     </footer>
 </html>

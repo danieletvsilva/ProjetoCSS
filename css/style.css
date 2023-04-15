@@ -1,36 +1,37 @@
 *{ 
     margin: 0;
 }
-.logo-telacontato img{
-    width: 150px; 
-    
-}
-.menu{
-    align-items: end;
-    
-}
-
-.menu a{
-    color: #fff;
-    font-weight: bold;
-    font-size: large;
-    text-decoration: none;
-    margin-left: 1rem;    
-    
-    
-}
-.menu a:hover{
-    color: #d47846;
-    text-decoration: none;
-}
-.navbar{
+header{
     background-color: #4b4bf4;
+    color:#fff; 
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;   
+    margin-bottom: 10px;
+
+}
+nav{
+    align-items: end;
+    width: 25%;
+}
+
+nav a{
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    margin-left: 1rem;    
+}
+
+nav a:hover{
+    color: #d47846;
+    text-decoration: none;
+}
+
+.logo {
+    width: 150px;
 }
 .container{
     display: flex;
@@ -43,38 +44,93 @@
 }
 .cabeçalho h1{   
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif
 }
 table{
-    border: 2px solid black;
+    border: 2px solid #d47846;
+    border-radius: 30px;
     padding: 10px;
     display: flex;
     justify-content: center;
     text-align: justify;
+    background-color:white;
+    color: black;
 }
 table tr th img{
     height: 40px;;
 }
 .mensagem{
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    
+}
+button{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #529dee;
+}
+
+aside{
+    background-color:#d47846;
+    width: 100%;
+ 
+}
+.home_banner {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    
+    
+   
+    
+}
+  
+.banner {    
+    width: 33%;
+    height: auto;
+    color: #080101;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    
+    
+}
+.banner img{
+    height: 25vh;
+    border-radius: 20px;
+    
+    
+   
+}
+body{
+    overflow-x:hidden;
+    font-family: 'Times New Roman', Times, serif; 
+    background-color: #d47846;
 }
 .rodape{
     flex-shrink: 0;
     background-color: #7ed957;
     padding: 10px;
-    position:absolute;
     top: 100%;
-    width: 100%;
+    width:100%;
     margin-top: 0;
-    display: flex;  
+     
+    
 }
 .rodape ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
+    justify-content: flex-start;
+    padding: 20px;
 }
 .rodape ul li a{
     padding: 10px;
@@ -86,7 +142,11 @@ table tr th img{
     color: #d47846;
     text-decoration: none;
 }
-body{
-    overflow-x:hidden;   
+.rodape p{
+   text-align: center;
+   font-size: 20px;
+   font-family: 'Times New Roman', Times, serif;
+   
 }
+
 
