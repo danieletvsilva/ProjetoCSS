@@ -1,6 +1,11 @@
 *{ 
     margin: 0;
 }
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x:hidden;
+}
 header{
     background-color: #4b4bf4;
     color:#fff; 
@@ -10,7 +15,6 @@ header{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-
 }
 nav{
     align-items: end;
@@ -33,48 +37,64 @@ nav a:hover{
 .logo {
     width: 150px;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;  
-    
-   
+.m1{
+    border: 1px solid black;    
+    text-align: center;
+}
+.m1 p{
 
-}
-.cabeçalho h1{   
     text-align: center;
-    font-family: 'Times New Roman', Times, serif
+    font-size: large;
 }
-table{
-    border: 2px solid #d47846;
-    border-radius: 30px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-    background-color:white;
-    color: black;
+.m2{
+    border: 1px solid black;    
+    text-align: center;
 }
-table tr th img{
-    height: 40px;;
+.m2 p{
+
+    text-align: center;
+    font-size: large;
 }
-.mensagem{
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+.m3{
+    border: 1px solid black;    
     text-align: center;
     
 }
-button{
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.m3 p{
+    text-align: center;
+    font-size: large;    
 }
-button:hover{
-    background-color: #529dee;
+.video{
+    width: 30vw;
+    height: 50vh;
+}
+
+.m4{
+    background-color: rgba(238, 255, 255, 0.935);
+    text-align: center;
+}
+.m4 p{
+    text-align: center;
+    font-size: large;
+    color: #3d3d40;
+}
+.m4 h1{
+    font-size: x-large;
+    color: #373738;
+}
+.m4 h2{
+    color: #3d3d40;
+}
+
+.m1  img{
+    width: 60vh;
+    border: 2px solid black;
+}.m2 img{
+    width: 60vh;
+    border: 2px solid black;
+}.m3 img{
+    width: 60vh;
+    border: 2px solid black;
 }
 
 aside{
@@ -87,8 +107,7 @@ aside{
     flex-flow: row;
     justify-content: space-between;
     width: 100%;
-    height: 100%; 
- 
+    height: 100%;      
 }
   
 .banner {    
@@ -98,20 +117,11 @@ aside{
     display: flex;
     justify-content: center ;
     align-items: center;
-    
-    
 }
+
 .banner img{
     height: 25vh;
     border-radius: 20px;
-    
-    
-   
-}
-body{
-    overflow-x:hidden;
-    font-family: 'Times New Roman', Times, serif; 
-    background-color: #d47846;
 }
 .rodape{
     flex-shrink: 0;
@@ -119,8 +129,7 @@ body{
     padding: 10px;
     top: 100%;
     width:100%;
-    margin-top: 0;
-    
+    margin-top: 0; 
 }
 .rodape ul{
     display: flex;
@@ -144,5 +153,3 @@ body{
    font-family: 'Times New Roman', Times, serif;
    
 }
-
-

@@ -10,9 +10,7 @@ body {
 
 section {
     text-align: center;
-    padding: 40px;
-    background-color:#ff914d ;
-    
+    padding: 40px;    
 }
 
 form {
@@ -97,9 +95,10 @@ nav a:hover{
 }
 
 aside{
-        background-color: rgb(255, 255, 255);
+        background-color: #ff914d(255, 255, 255);
         width: 100%;
-        height: 150px;
+        height: 25vh;
+
     
 }
 
@@ -119,7 +118,11 @@ aside{
     display: flex;
     justify-content: center ;
     align-items: center;
-    border: 1px solid #131313;
+}
+
+.home_banner img {
+    height: 25vh;
+    border-radius: 20px;
 }
 
 header ul li a{
