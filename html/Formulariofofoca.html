@@ -1,34 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>Cadastro para Receber Fofocas</title>
-    <link rel="stylesheet" href="../css/formulario.css">
-   </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-   <body>
+    <title>Cadastro para Receber Fofocas</title>
+    <link rel="stylesheet" href="../css/formulario.css" />
+    <script>
+      function alertaMensagem() {
+        alert("Seu cadastro foi realizado");
+      }
+    </script>
+  </head>
+  <body>
     <header>
-      <img class="logo" src="../img/logo.png" alt="Logo SoulFifi" />
+      <a href="../html/Home.html"
+        ><img id="logo" src="../img/logo.png" alt="Logo SoulFifi"
+      /></a>
       <nav>
-        <a href="">HOME</a>
-        <a href="">CONTATO</a>
-        <a href="">CADASTRO</a>
+        <a href="Home.html">HOME</a>
+        <a href="PaginaContato.html">CONTATO</a>
+        <a href="Formulariofofoca.html">CADASTRO</a>
       </nav>
     </header>
-
     <main>
       <section>
         <h1>Cadastro para Receber Fofocas</h1>
 
         <form class="Contains" action="/cadastro" method="post">
-          <label for="nome">Nome:</label>
+          <label for="nome"><b>Nome:</b> </label>
           <input type="text" id="nome" name="nome" required /><br /><br />
 
-          <label for="sobrenome">Sobrenome:</label>
+          <label for="sobrenome"><b>Sobrenome:</b> </label>
           <input
             type="text"
             id="sobrenome"
@@ -36,59 +40,124 @@
             required
           /><br /><br />
 
-        <label for="email"> <b> Email: </b> </label>
-        <input type="email" id="email" name="email" required><br><br>
+          <label for="email"> <b> Email: </b> </label>
+          <input type="email" id="email" name="email" required /><br /><br />
 
-        <label for="dataNascimento"><b> Data de Nascimento: </b></label>
-        <input type="date" id="dataNascimento" name="dataNascimento" required><br><br>
+          <label for="dataNascimento"><b> Data de Nascimento: </b></label>
+          <input
+            type="date"
+            id="dataNascimento"
+            name="dataNascimento"
+            required
+          /><br /><br />
 
-        <label for="telefone"><b> Telefone: </b> </label>
-        <input type="tel" id="telefone" name="telefone" required><br><br>
+          <label for="telefone"><b> Telefone: </b> </label>
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            required
+          /><br /><br />
 
-        <label for="interesse"> <b> Qual conteúdo mais te interessa? </b> </label>
-        <select id="interesse" name="interesse" required>
+          <label for="interesse">
+            <b> Qual conteúdo mais te interessa? </b>
+          </label>
+          <select id="interesse" name="interesse" required>
             <option value="">Selecione</option>
             <option value="fofocas">Fofocas de celebridades</option>
             <option value="fofocasEsportes">Fofocas de esportes</option>
             <option value="fofocasTV">Fofocas de TV</option>
             <option value="fofocasCinema">Fofocas de cinema</option>
-            <option value="fofocasCinema">Fofocas de bairro</option>
+            <option value="fofocasCinema">Fofocas de bairro</option></select
+          ><br />
 
-        </select><br>
+          <input
+            type="checkbox"
+            id="termosUso"
+            name="termosUso"
+            required
+            style="vertical-align: middle; margin-right: 5px"
+          />
+          <label for="termosUso" style="display: inline">
+            <b>Concordo com os termos de uso</b></label
+          >
+          <br /><br />
 
-        <input type="checkbox" id="termosUso" name="termosUso" required style="vertical-align: middle; margin-right: 5px;">
-        <label for="termosUso" style="display:inline;"> <b>Concordo com os termos de uso</b></label> <br><br>
-        
+          <input
+            type="checkbox"
+            id="envioEmails"
+            name="envioEmails"
+            style="vertical-align: middle; margin-right: 5px"
+          />
+          <label for="envioEmails" style="display: inline">
+            <b> Aceito receber emails sobre fofocas </b>
+          </label>
+          <br /><br />
 
-        <input type="checkbox" id="envioEmails" name="envioEmails" style="vertical-align: middle; margin-right: 5px;">
-        <label for="envioEmails" style=display:inline;> <b> Aceito receber emails sobre fofocas </b> </label> <br><br>
-
-        <input type="submit" value="Cadastrar">
-    </form>
-</section>
- 
-
-    <aside>
+          <input onclick="alertaMensagem()" type="submit" value="Cadastrar" />
+        </form>
+      </section>
+      <aside>
         <div class="home_banner">
-            <div class="banner">Banner1</div>
-            <div class="banner">Banner2</div>
-            <div class="banner">Banner3</div>
+          <div class="banner">
+            <a
+              href="https://soulcode.com/assinatura-cursos-online"
+              target="_blank"
+              ><img src="../img/soulcode.jpg" alt="soulcode"
+            /></a>
+          </div>
+          <div class="banner">
+            <a href="https://soulcode.com/bootcamp" target="_blank"
+              ><img src="../img/soulcode2.jpg" alt="bootcamp"
+            /></a>
+          </div>
+          <div class="banner">
+            <a
+              href="https://www.salesforce.com/br/campaign/successnow/"
+              target="_blank"
+              ><img src="../img/salesforce.jpg" alt="saleforce"
+            /></a>
+          </div>
         </div>
-   </aside>
-</Main>
-
-</body>
-<footer>
+      </aside>
+    </main>
+  </body>
+  <footer>
     <section class="rodape">
-        <ul type="none">
-            <li> <a href="https://soulcode.com/"><img src="../img/download.png" alt="site soulcode" style="height: 30px;"> </a></li>
-            <li>  <a href="https://instagram.com/soulcodeacademy?igshid=YmMyMTA2M2Y="><img src="../img/insta-icon.png" alt="insta"style="height: 30px;"> </a> </li>
-            <li> <a href="https://www.linkedin.com/company/soulcodeacademy/mycompany/"><img src="../img/linkdin-icon.png" alt="linkedin"style="height: 30px;"> </a> </li>
-         </ul>
-            <p class="rep"> Daniele, Mauricio e Eduardo &copy; 2023 </p> 
-     </section>
-                      
-</footer>
-
-
-        </html>
+      <ul type="none">
+        <li>
+          <a href="https://soulcode.com/" target="_blank"
+            ><img
+              src="../img/download.png"
+              alt="site soulcode"
+              style="height: 30px"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://instagram.com/soulcodeacademy?igshid=YmMyMTA2M2Y="
+            target="_blank"
+            ><img
+              src="../img/insta-icon.png"
+              alt="insta"
+              style="height: 30px"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/company/soulcodeacademy/mycompany/"
+            target="_blank"
+            ><img
+              src="../img/linkdin-icon.png"
+              alt="linkedin"
+              style="height: 30px"
+            />
+          </a>
+        </li>
+      </ul>
+      <p class="rep">Daniele, Mauricio e Eduardo &copy; 2023</p>
+    </section>
+  </footer>
+</html>

@@ -1,96 +1,107 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
 }
-*/
-body{ 
-  background-color: rgba(145, 162, 211, 0.352);
+*/ body {
+  background-color: rgba(212, 231, 246, 0.597);
   overflow-x: hidden;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
-header{
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+}
+
+header {
   background-color: #4b4bf4;
-  color:#fff; 
-  width: 100vw;
-  height: 14vh;
+  color: #fff;
+  width: 100%;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1vw;
+  margin-bottom: 10px;
 }
-  
-nav{
+
+nav {
   display: flex;
-  justify-content: end;    
+  justify-content: end;
   width: 100vw;
   margin-right: 11vw;
 }
 
-nav a{
+nav a {
   color: #fff;
   font-weight: bold;
-  font-size: 2.5vh;
+  font-size: large;
   text-decoration: none;
-  margin-left: 1rem;    
+  margin-left: 1rem;
 }
 
-nav a:hover{
-    color: #d47846;
-    text-decoration: none;
+nav a:hover {
+  color: #d47846;
+  text-decoration: none;
 }
 
-#logo{
-    width: 150px;      
+#logo {
+  width: 150px;
 }
 
 /*Main do site*/
-.container{
+.container {
   display: flex;
   flex-wrap: wrap;
-  width: 100vw; 
+  width: 100vw;
   height: 100vh;
+  background-color: rgba(212, 231, 246, 0.597);
 }
 
-.home__sec1{    
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;   
-    width: 45vw; 
-    height: 100vh;
-    margin-top: 1vh;
-    float: left;          
+.home__sec1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45vw;
+  height: 100vh;
+  margin-top: 1vh;
+  float: left;
 }
-.home__sec1 article{   
+.home__sec1 article {
   align-items: center;
-  text-align: center;    
+  text-align: center;
 }
-.home__sec1 a{
+.home__sec1 a {
   color: #002082;
   font-size: x-large;
-  text-decoration: none; 
+  text-decoration: none;
   cursor: pointer;
-  
 }
-.home__sec1 a h1{    
-  font-size: 3vh; 
+.home__sec1 a h1 {
+  font-size: 3vh;
 }
 
-.img_1{
+.img_1 {
   border-radius: 3vh;
-  width: 29vw;    
-  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  width: 29vw;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
 }
 
 /*Seção 2*/
-.home__sec2{  
-    width: 38vw;    
-    display: flex;
-    flex-wrap: wrap; 
-    flex-direction: column;   
-    text-align: center;
-    justify-content: center; 
-    float: left;     
+.home__sec2 {
+  width: 38vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  float: left;
 }
-.home__sec2 a{
+.home__sec2 a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,39 +110,38 @@ nav a:hover{
   color: #1a7606;
   cursor: pointer;
 }
-.home__sec2 a h3{ 
-  text-align: center; 
+.home__sec2 a h3 {
+  text-align: center;
   font-size: 2.5vh;
-
 }
-.happy{
+.happy {
   width: 25vw;
   border-radius: 2vh;
 }
 
-.video{
+.video {
   width: 25vw;
   height: 35vh;
   border-radius: 2vh;
 }
 
 /*Cadastro e acesso às pags*/
-.social{
+.social {
   background-color: rgba(226, 198, 223, 0.48);
   width: 100vw;
   height: 30vh;
   margin-top: 1vh;
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   justify-content: center;
 }
-.cad{
+.cad {
   width: 33vw;
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
   align-items: center;
 }
-.img_2{
+.img_2 {
   width: 15vw;
   height: 25vh;
   border-radius: 5vh;
@@ -139,14 +149,13 @@ nav a:hover{
   justify-content: flex-start;
 }
 
-.cad a{
+.cad a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  text-decoration: none;  
-    
+  text-decoration: none;
 }
-.cad p{
+.cad p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -154,115 +163,110 @@ nav a:hover{
   color: #e9067f;
   margin-left: 1vw;
 }
-.cad strong{
+.cad strong {
   display: flex;
   justify-content: flex-start;
   font-size: 2.5vh;
-  color: #e9067f;  
+  color: #e9067f;
 }
 
-.navegacao{
+.navegacao {
   width: 33vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-.navegacao a{
+.navegacao a {
   text-decoration: none;
   color: #2e6204;
   font-size: 2.5vh;
   cursor: pointer;
-  
 }
-.navegacao p{
+.navegacao p {
   font-weight: bold;
   font-size: 2.5vh;
 }
 
-.inst{
+.inst {
   width: 33vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-.inst a{
+.inst a {
   text-decoration: none;
   color: #e97406;
   font-size: 2.5vh;
-  
-  
 }
-.inst p{
+.inst p {
   font-weight: bold;
   font-size: 2.5vh;
 }
 
-
 /*Aside*/
-aside{
+aside {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: end;
-  background-color: #e97406;
+
   height: 100vh;
   float: right;
+  background-color: rgba(212, 231, 246, 0.597);
 }
 
 .home_banner {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    width: 100% ;    
-    height: 100%;    
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(212, 231, 246, 0.597);
 }
-  
-.banner {    
-    width: 100%;
-    height: 33%;
-    display: flex;
-    justify-content: center ;
-    align-items: center;    
-  }
-.banner img{
+
+.banner {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(212, 231, 246, 0.597);
+}
+.banner img {
   width: 14vw;
   border-radius: 1vh;
+  background-color: rgba(212, 231, 246, 0.597);
 }
- /*Footer*/ 
- 
-.rodape{
+/*Footer*/
+
+.rodape {
   flex-shrink: 0;
   background-color: #7ed957;
-  
+
   top: 100%;
-  width:100vw;
+  width: 100vw;
   margin-top: 0;
-  
 }
-.rodape ul{
+.rodape ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   padding: 20px;
 }
-.rodape ul li a{
+.rodape ul li a {
   padding: 10px;
   text-decoration: none;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
-.rodape ul li a:hover{
+.rodape ul li a:hover {
   color: #d47846;
   text-decoration: none;
 }
-.rodape p{
- text-align: center;
- font-size: 20px;
- font-family: 'Times New Roman', Times, serif;
- 
+.rodape p {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
 }
-
-
-
