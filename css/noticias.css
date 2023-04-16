@@ -146,3 +146,13 @@ aside {
   font-size: 20px;
   font-family: "Times New Roman", Times, serif;
 }
+
+strong h2{
+  color: rgb(4, 4, 4);
+}
+
+.tks{
+    text-transform: uppercase;
+    font-size: larger;
+    color: #e75a0eea;
+}
