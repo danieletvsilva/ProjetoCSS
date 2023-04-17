@@ -3,7 +3,7 @@
   font-family: "Times New Roman", Times, serif;
 }
 */ body {
-  background-color: rgba(212, 231, 246, 0.597);
+  background-color: rgba(222, 238, 249, 0.195);
   overflow-x: hidden;
   font-family: "Times New Roman", Times, serif;
 }
@@ -63,21 +63,22 @@ nav a:hover {
 .home__sec1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center;    
   width: 45vw;
-  height: 100vh;
-  margin-top: 1vh;
+  height: 100vh; 
   float: left;
 }
 .home__sec1 article {
   align-items: center;
   text-align: center;
+  padding-top: 8vh;
 }
 .home__sec1 a {
   color: #002082;
   font-size: x-large;
   text-decoration: none;
   cursor: pointer;
+  
 }
 .home__sec1 a h1 {
   font-size: 3vh;
