@@ -243,7 +243,6 @@ aside {
 .rodape {
   flex-shrink: 0;
   background-color: #7ed957;
-
   top: 100%;
   width: 100vw;
   margin-top: 0;
